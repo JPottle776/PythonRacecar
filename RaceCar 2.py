@@ -74,7 +74,7 @@ def race():
         
         while(lap < 1):
             #racers
-            racecar1 = {"name":"Matt Kenseth", "sponser":"Dollar General", "num":"#01", "speed": randint(1,200)}
+            racecar1 = {"name":"Matt Kenseth", "sponser":"Dollar General", "num":"#01", "speed": randint(0,1)}
             racecar2 = {"name":"Kyle Busch", "sponser":"Skittles", "num":"#02", "speed": randint(1,200)}
             racecar3 = {"name":"Tim Flock", "sponser":"Ford", "num":"#03", "speed": randint(1,200)}
             racecar4 = {"name":"Mark Martin", "sponser":"Car Quest", "num":"#04", "speed": randint(1,200)}
@@ -98,8 +98,11 @@ def race():
             '''
             print("Lap:",lapNum)
             '''
+            if(racecar1["speed"] == 0):
+                racecar1Time = "crash and burn"
             #print name and speed
-            racecar1Time = 1 / racecar1["speed"] * 60 * 60
+            if(racecar1["speed"] > 0):
+                racecar1Time = 1 / racecar1["speed"] * 60 * 60
             racecar2Time = 1 / racecar2["speed"] * 60 * 60
             racecar3Time = 1 / racecar3["speed"] * 60 * 60
             racecar4Time = 1 / racecar4["speed"] * 60 * 60
@@ -144,6 +147,7 @@ def race():
             print(racecar20["name"],"|", "speed:",racecar20["speed"],"mph","|", "time:", round(racecar20Time, 2),"sec")
             print(racecar26["name"],"|", "speed:",racecar26["speed"],"mph","|", "time:", round(racecar26Time, 2),"sec")
             '''
+                       
             #push to car averages
             i = lapNum
             racecar1Aver[str(i)] = racecar1["speed"]
@@ -192,6 +196,7 @@ def race():
             totalTime26[str(i)] = round(racecar26Time, 2)
             
             
+                
             
             #print("=====================================================")
             lap += 1
