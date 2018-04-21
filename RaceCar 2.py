@@ -68,13 +68,35 @@ def race():
     totalTime19 = {}
     totalTime20 = {}
     totalTime26 = {}
+
+    racecar1Time = {}
+    racecar2Time = {}
+    racecar3Time = {}
+    racecar4Time = {}
+    racecar5Time = {}
+    racecar6Time = {}
+    racecar7Time = {}
+    racecar8Time = {}
+    racecar9Aver = {}
+    racecar10Time = {}
+    racecar11Time = {}
+    racecar12Time = {}
+    racecar13Time = {}
+    racecar14Time = {}
+    racecar15Time = {}
+    racecar16Time = {}
+    racecar17Time = {}
+    racecar18Time = {}
+    racecar19Time = {}
+    racecar20Time = {}
+    racecar26Time = {}
     
     while(lapNum < numberOfLaps):
         
         
         while(lap < 1):
             #racers
-            racecar1 = {"name":"Matt Kenseth", "sponser":"Dollar General", "num":"#01", "speed": randint(0,1)}
+            racecar1 = {"name":"Matt Kenseth", "sponser":"Dollar General", "num":"#01", "speed": randint(1,200)}
             racecar2 = {"name":"Kyle Busch", "sponser":"Skittles", "num":"#02", "speed": randint(1,200)}
             racecar3 = {"name":"Tim Flock", "sponser":"Ford", "num":"#03", "speed": randint(1,200)}
             racecar4 = {"name":"Mark Martin", "sponser":"Car Quest", "num":"#04", "speed": randint(1,200)}
@@ -98,11 +120,38 @@ def race():
             '''
             print("Lap:",lapNum)
             '''
+            '''
             if(racecar1["speed"] == 0):
-                racecar1Time = "crash and burn"
+                print("crash and burn")
+                racecar1Time =
+            '''
+            
+            '''
             #print name and speed
             if(racecar1["speed"] > 0):
                 racecar1Time = 1 / racecar1["speed"] * 60 * 60
+                racecar2Time = 1 / racecar2["speed"] * 60 * 60
+                racecar3Time = 1 / racecar3["speed"] * 60 * 60
+                racecar4Time = 1 / racecar4["speed"] * 60 * 60
+                racecar5Time = 1 / racecar5["speed"] * 60 * 60
+                racecar6Time = 1 / racecar6["speed"] * 60 * 60
+                racecar7Time = 1 / racecar7["speed"] * 60 * 60
+                racecar8Time = 1 / racecar8["speed"] * 60 * 60
+                racecar9Time = 1 / racecar9["speed"] * 60 * 60
+                racecar10Time = 1 / racecar10["speed"] * 60 * 60
+                racecar11Time = 1 / racecar11["speed"] * 60 * 60
+                racecar12Time = 1 / racecar12["speed"] * 60 * 60
+                racecar13Time = 1 / racecar13["speed"] * 60 * 60
+                racecar14Time = 1 / racecar14["speed"] * 60 * 60
+                racecar15Time = 1 / racecar15["speed"] * 60 * 60
+                racecar16Time = 1 / racecar16["speed"] * 60 * 60
+                racecar17Time = 1 / racecar17["speed"] * 60 * 60
+                racecar18Time = 1 / racecar18["speed"] * 60 * 60
+                racecar19Time = 1 / racecar19["speed"] * 60 * 60
+                racecar20Time = 1 / racecar20["speed"] * 60 * 60
+                racecar26Time = 1 / racecar26["speed"] * 60 * 60
+            '''
+            racecar1Time = 1 / racecar1["speed"] * 60 * 60
             racecar2Time = 1 / racecar2["speed"] * 60 * 60
             racecar3Time = 1 / racecar3["speed"] * 60 * 60
             racecar4Time = 1 / racecar4["speed"] * 60 * 60
@@ -123,6 +172,10 @@ def race():
             racecar19Time = 1 / racecar19["speed"] * 60 * 60
             racecar20Time = 1 / racecar20["speed"] * 60 * 60
             racecar26Time = 1 / racecar26["speed"] * 60 * 60
+            
+            
+            
+                
             
             '''
             print(racecar1["name"],"|", "speed:",racecar1["speed"],"mph","|", "time:", round(racecar1Time, 2),"sec")
@@ -172,6 +225,8 @@ def race():
             racecar20Aver[str(i)] = racecar20["speed"]
             racecar26Aver[str(i)] = racecar26["speed"]
 
+            
+            
             #pushes time per lap into another varibale
             totalTime1[str(i)] = round(racecar1Time, 2)
             totalTime2[str(i)] = round(racecar2Time, 2)
@@ -194,7 +249,6 @@ def race():
             totalTime19[str(i)] = round(racecar19Time, 2)
             totalTime20[str(i)] = round(racecar20Time, 2)
             totalTime26[str(i)] = round(racecar26Time, 2)
-            
             
                 
             
